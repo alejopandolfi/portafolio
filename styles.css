@@ -1,19 +1,75 @@
 
-@media only screen and (max-width: 600px) {
-    .hero {
-        padding: 50px 0; 
-    }
-
-    .hero-content {
-        font-size: 1.5em; 
-    }
-
-    #yokp {
-        margin-left: 40%; 
-    }
-
-    
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #262626;
+    color: #fff;
+    font-size: 16px;
 }
+
+.hero {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 60px 0; /* Reduje el espacio en la parte superior e inferior */
+    position: relative;
+}
+
+.hero-content {
+    font-family: "Josefin Sans", sans-serif;
+    max-width: 90%; /* Ajusté el ancho máximo */
+    margin: 0 auto;
+}
+
+.skills-list {
+    font-family: "PT Sans", sans-serif;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Para manejar múltiples filas en dispositivos pequeños */
+}
+
+.skills-list li {
+    margin: 0 15px 15px 0; /* Agregué un margen inferior para separar las imágenes */
+}
+
+.proyecto {
+    margin-bottom: 30px; /* Reduje el espacio entre proyectos */
+}
+
+#yokp {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto; /* Centré la imagen */
+    border: 2px solid beige;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+#about-text {
+    font-size: 14px; /* Reduje el tamaño del texto para pantallas más pequeñas */
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px; /* Reduje el tamaño del texto en el pie de página */
+}
+
+
+
+
+
+
+
 
 body {
     font-family: 'Arial', sans-serif;
@@ -124,6 +180,80 @@ a:hover {
 a:visited {
     color: #0056b3; 
 }
+
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+    #sobre-mi {
+        background-color: #1a1a1a;
+        padding: 30px;
+        margin: 20px 0;
+        position: relative;
+    }
+
+    #sobre-mi::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 15px  solid #c6cc72;
+        box-sizing: border-box;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    #sobre-mi:hover::after {
+        opacity: 1;
+        transition: 1s;
+    }
+
+    #about-text {
+        z-index: 1;
+    }
+}
+ 
+/* Agrega esto al final de tu archivo styles.css */
+
+#hero {
+    position: relative;
+    overflow: hidden;
+}
+
+#header-lines {
+    position: relative;
+    height: 3px;
+    background: transparent;
+    overflow: hidden;
+}
+
+.line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(242, 242, 242, 0.5), transparent, rgba(242, 242, 242, 0.5));
+    animation: animateLine 6s linear infinite;
+}
+
+@keyframes animateLine {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
+
+
+
+
+
+
 
 /* GRACIAS POR LEER MI CÓDIGO, ESPERO ME TENGAS EN CUENTA PARA TRABAJAR JUNTOS :D /*
 
