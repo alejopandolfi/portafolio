@@ -1,3 +1,20 @@
+
+@media only screen and (max-width: 600px) {
+    .hero {
+        padding: 50px 0; 
+    }
+
+    .hero-content {
+        font-size: 1.5em; 
+    }
+
+    #yokp {
+        margin-left: 40%; 
+    }
+
+    
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -109,3 +126,8 @@ a:visited {
 }
 
 /* GRACIAS POR LEER MI CÓDIGO, ESPERO ME TENGAS EN CUENTA PARA TRABAJAR JUNTOS :D /*
+
+
+
+
+
